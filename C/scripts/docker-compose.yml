@@ -1,0 +1,8 @@
+services:
+  c_dev:
+    container_name: c_dev
+    image: gcc:latest
+    volumes:
+      - ../app:/app
+    working_dir: /app
+    command: ["tail", "-f", "/dev/null"]
